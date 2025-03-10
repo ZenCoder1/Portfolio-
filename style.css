@@ -1,0 +1,246 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f4f4f4;
+    color: #131212;
+}
+
+header {
+    background-color: #222;
+    padding: 10px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+.about-image{
+    margin: 2rem;
+    padding: 1rem;
+    width: 40vh;
+    background-image: url("photo_2025-03-10_22-46-56.jpg");
+    background-size: cover;
+    height: 40vh;
+    border-radius: 50%;
+    border:2px solid #4065a3;
+}
+
+
+.hero {
+    background: #12c2e9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #302b2b;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #ddd;
+    &:hover{
+        text-decoration: underline;
+        color: #FF6347;
+    }
+}
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #222;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #FF6347;
+    color: white;
+}
+
+.about {
+    background-color: #c1e7ef;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.about h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.projects {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-image:url("Futuristic-Red-Blue-Background-Design-Graphics-30683310-1.jpg") ;
+    background-size: cover;
+    color: #f4f4f4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1.1em;
+    color: #666;
+}
+.contact {
+    background-image: url("https://www.shutterstock.com/image-photo/minimal-work-space-creative-flat-260nw-1156566583.jpg");
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.contact button {
+    background-color: #4065a3;
+    color: #222;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #FF6347;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .project-cards {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .contact form {
+        width: 80%;
+    }
+}
